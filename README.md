@@ -12,6 +12,9 @@ functionalities on the NxtTrendz website, including:</p>
 
 1. **User Login:** Verifying the login process with valid and invalid credentials.
 2. **User Registration:** Testing the registration flow to ensure users can sign up correctly.
+3. **Home Page** : Validating the home page elements and their functionality.
+4. **Product Page** : Ensuring the product page loads correctly and displays the product details.
+5. **Cart Page** : Verifying the cart page functionality, including adding and removing products.
 
 
 <h1>Technologies Used</h1>
@@ -66,6 +69,11 @@ the tests, reports will be generated in the target folder. The reports are in bo
 
 **JSON Report:** target/cucumber-reports/Cucumber.json<br>
 **XML Report:** target/cucumber-reports/Cucumber.xml<br>
+**Published Report:** Once all the tests are executed, the reports are published online. Navigate to 
+the bottom of the terminal to get the published report link.The published report is in HTML format
+and can be viewed in a web browser. The report provides a summary of the test execution, including
+the number of passed, failed, and skipped tests, as well as detailed information about each test case,
+including the steps and their status.
 
 <h1>Setup and Configuration:</h1>
 
