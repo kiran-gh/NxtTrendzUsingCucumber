@@ -82,7 +82,7 @@ public class ProductPageSteps {
     }
 
     @And("searches for a specific product with {string}")
-    public void searches_for_a_specific_product_with(String title) {
+    public void searches_for_a_specific_product_with(String title) throws InterruptedException {
         productsPage.searchForAProduct(title);
     }
 

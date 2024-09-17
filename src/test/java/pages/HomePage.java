@@ -82,6 +82,7 @@ public class HomePage {
         return driver.getCurrentUrl();
     }
     public void cartPageLinkClick(){
+        wait.until(ExpectedConditions.visibilityOf(cartButtonEle));
         cartButtonEle.click();
         wait.until(ExpectedConditions.urlToBe(prop.getProperty("cartPageUrl")));
     }
