@@ -86,3 +86,18 @@ This automation testing framework will provide a robust solution to ensure the p
 critical user interactions on the NxtTrendz website. It ensures that the core features, such as login 
 and registration, perform reliably under various conditions, contributing to the overall quality and 
 user experience of the web application.
+
+
+<h1>Author:</h1>
+
+**Vogeti Satya Kiran** 
+
+- **Email**: vogetisatyakiran@gmail.com
+- **Phone**: +91 7382482271
+- **GitHub**: https://github.com/kiran-gh
+- **LinkedIn**: https://www.linkedin.com/in/vogeti-satya-kiran/
+
+**About the Author**
+Automation Testing Engineer with a strong background of 3.5 years automation testing experience. Skilled 
+in creating automated tests using Cucumber and Page Object Model, ensuring the reliability and 
+maintainability of web applications.

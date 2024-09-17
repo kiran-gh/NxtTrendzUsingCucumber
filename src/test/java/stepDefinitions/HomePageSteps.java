@@ -4,29 +4,24 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.HomePage;
 import pages.LoginPage;
 import utility.ConfigReader;
 
-import java.time.Duration;
 import java.util.Properties;
 
 import static webDriverFactory.driverFactory.driver;
 
 public class HomePageSteps {
-    HomePage homePage;
-    LoginPage loginPage;
-    WebDriverWait wait;
-    Properties prop;
+    private HomePage homePage;
+    private final Properties prop;
 
 
     public HomePageSteps(){
         ConfigReader configReader = new ConfigReader();
         prop = configReader.init_prop();
-        loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
         loginPage.validUserLogin();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     @When("the user is redirected home page.")

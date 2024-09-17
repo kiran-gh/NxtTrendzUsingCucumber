@@ -12,7 +12,7 @@ public class ConfigReader {
     public Properties init_prop(){
         properties = new Properties();
         try {
-            FileInputStream fis = new FileInputStream("src/test/resources/configurations.properties");
+            FileInputStream fis = new FileInputStream("src/test/java/resources/configurations.properties");
             properties.load(fis);
         } catch (FileNotFoundException e) {
            e.printStackTrace();

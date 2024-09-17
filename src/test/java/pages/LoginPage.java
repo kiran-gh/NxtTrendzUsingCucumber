@@ -12,9 +12,9 @@ import java.time.Duration;
 import java.util.Properties;
 
 public class LoginPage {
-    WebDriver driver;
-    WebDriverWait wait;
-    Properties prop;
+    private final WebDriver driver;
+    private final WebDriverWait wait;
+    private final Properties prop;
 
     //Locators for the login page
     @FindBy(id = "username")

@@ -19,8 +19,8 @@ import static webDriverFactory.driverFactory.*;
 
 public class LoginPageSteps {
     LoginPage loginPage;
-    WebDriverWait wait;
-    Properties prop;
+    private final WebDriverWait wait;
+    private final Properties prop;
 
 
     public LoginPageSteps(){

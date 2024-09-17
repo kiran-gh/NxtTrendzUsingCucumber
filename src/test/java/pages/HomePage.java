@@ -12,9 +12,9 @@ import java.time.Duration;
 import java.util.Properties;
 
 public class HomePage {
-    WebDriver driver;
-    WebDriverWait wait;
-    Properties prop;
+    private final WebDriver driver;
+    private final WebDriverWait wait;
+    private final Properties prop;
 
 
     //    HomePage locators
@@ -46,7 +46,6 @@ public class HomePage {
         ConfigReader configReader = new ConfigReader();
         prop = configReader.init_prop();
         PageFactory.initElements(driver, this);
-
     }
 
     public String  homePageUrl() {
@@ -75,6 +74,7 @@ public class HomePage {
         return logoutBtnEle.isDisplayed();
     }
     public void productsPageLinkClick(){
+        wait.until(ExpectedConditions.elementToBeClickable(productsButtonEle));
         productsButtonEle.click();
         wait.until(ExpectedConditions.urlToBe(prop.getProperty("productsPageUrl")));
     }
